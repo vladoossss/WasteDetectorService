@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  yolo:
+    container_name: yolo
+    build:
+      context: ./services/yoloAPI
+      dockerfile: Dockerfile
+    runtime: nvidia
+    # environment:
+    #   - CUDA_VISIBLE_DEVICES=13
+    volumes:
+      - ./services/weights:/weights
+    ports:
+      - 8001:8001

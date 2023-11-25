@@ -28,8 +28,8 @@ def get_submission(video_path, detector_path,
         video_name = video.split('/')[-1].split('.')[0]
         ffmpeg_extract_subclip(
             video, 
-            130, 
-            140, 
+            120, 
+            150, 
             targetname=f'data/test/{video_name}_temp.mp4'
         )
         

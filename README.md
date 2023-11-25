@@ -10,6 +10,9 @@ docker-compose up --build
 ```
 4. После запуска сервис будет доступен по адресу `http://localhost:8001/`
 
+![demo1 ](./imgs/demo.png)
+![demo2 ](./imgs/demo2.png)
+
 
 ## Подготовка данных, Обучение и инференс моделей
 
